@@ -1,0 +1,19 @@
+name: "distilgpt2"
+backend: "python"
+max_batch_size: 1
+
+input [
+  {
+    name: "prompt"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]
+
+output [
+  {
+    name: "completion"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]

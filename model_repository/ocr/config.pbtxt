@@ -1,0 +1,19 @@
+name: "ocr"
+backend: "python"
+max_batch_size: 0
+
+input [
+  {
+    name: "input_image"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]
+
+output [
+  {
+    name: "text"
+    data_type: TYPE_STRING
+    dims: [ 1 ]
+  }
+]
